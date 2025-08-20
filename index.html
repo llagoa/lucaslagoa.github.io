@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +12,39 @@
 </head>
 <body>
     <header class="header">
+        <nav class="header__nav">
+        <ul class="menu menu--principal">
+            <li class="menu__item">
+                <a class="menu__link active" href="#home">
+                    <span class="menu__text">Home</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#projects">
+                    <span class="menu__text">Projects</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#about">
+                    <span class="menu__text">About</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#contact">
+                    <span class="menu__text">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
         <div class="header__brand">
             <img class="brand__logo" src="./assets/img/icons/logo.png" alt="Logo LL">
-        </div>        
-        <i id="toggleTheme" class="bi bi-brightness-high"></i>
+        </div> 
+        <div class="header__toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>
+        </div>         
     </header>
 
-    <nav>
+    <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
                 <a class="menu__link active" href="#home">
@@ -46,7 +72,62 @@
             </li>
         </ul>
     </nav>
-
-    <h1>Lucas Lagoa</h1>
+    <main>
+        <div class="main__content1">
+            <h1><b>Blending user-centered design</b> with clean code</h1>
+            <p>Lucas Lagoa, Campinas-SP, UX/UI Designer and front-end developer.</p>
+            <ul class="menu menu--social">
+                <li>
+                    <a class="menu__link" href=""></a>
+                   <i class="menu__icon bi bi-github"></i> 
+                </li>
+                <li>
+                    <a class="menu__link" href=""></a>
+                   <i class="menu__icon bi-linkedin"></i> 
+                </li>
+                <li>
+                    <a class="menu__link" href=""></a>
+                   <i class="menu__icon bi-instagram"></i> 
+                </li>
+            </ul>
+            <button class="btn btn--primary">
+                <span>View my projects</span>
+                <i class="bi bi-arrow-down-right"></i>
+            </button>
+        </div>
+        <div class="main__content2">
+            <iframe src="https://www.youtube.com/embed/VQRyt4yv8OM?si=fscezkJogO8AJyKV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    <section class="skills">
+        <h2>
+            knowledge of the main technologies on the market</h2>
+            <ul class="skills__list">
+                <li class="skills__item">
+                    <img class="skills__logo" src="assets/img/icons/Figma.png" alt="Figma logo">
+                </li>
+                <li class="skills__item">
+                    <img class="skills__logo" src="assets/img/icons/Miro.png" alt="Miro logo">
+                </li>
+                <li class="skills__item">
+                    <img class="skills__logo" src="assets/img/icons/Html.png" alt="Html logo">
+                </li>
+                <li class="skills__item">
+                    <img class="skills__logo" src="assets/img/icons/Css.png" alt="Css logo">
+                </li>
+                <li class="skills__item">
+                    <img class="skills__logo" src="assets/img/icons/Js.png" alt="Javascript logo">
+                </li>
+                <li class="skills__item">
+                    <img class="skills__logo" src="assets/img/icons/Python.png" alt="Python logo">
+                </li>
+            </ul>
+    </section>
+      <footer>
+        <p>
+         © 2023. Todos os Direitos Reservados. Lucas Lagoa. Desenvolvido por <a href="https://github.com/llagoa">LL</a>.
+        </p>    
+    </footer>
+    <script src="assets/js/scripts.js"></script>  
 </body>
 </html>
