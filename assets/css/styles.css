@@ -22,7 +22,7 @@
     --primary-bg-color--: #C7C8C9;
     --secondary-bg-color-- : #C7C8C9;
     --primary-border-color--: #C7C8C9;
-    --secondary-border-color--: #C7C8C9;
+    --secondary-border-color--: #9a9a9c;
 
     --title-color--: #0B0B0F;
     --text-color--: #28292E;
@@ -35,6 +35,9 @@
     padding: 0;
     box-sizing: border-box;
     vertical-align: baseline;
+}
+
+.menu--social {
     list-style: none;
 }
 
@@ -68,6 +71,11 @@ b {
 h1 {
     font-size: 2.5rem;
     font-weight: 200;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
 }
 
 h1, h2, h3 {
@@ -186,9 +194,11 @@ footer {
     width: 100%;
     background-color: transparent;
     border-radius: 3.125rem;
+    border: none;
     padding: 0.875rem 1.5rem;
     transition: ease-in-out .3s;
     cursor: pointer;
+    color: var(--primary-color--);
 }
 
 .btn:hover {
@@ -209,10 +219,11 @@ footer {
     border: 1px solid var(--primary-color--);
 }
 
-
+main, .ux__projects {
+    padding: 2.5rem 1rem;
+}
 
 main {
-    padding: 2.5rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -235,7 +246,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     gap: 1.25rem;
-    padding: 6.25rem 1rem 2rem 1rem;
+    padding: 6.25rem 1rem 2rem;
     background-color: var(--secondary-bg-color);
     margin-top: -5.5rem;
 }
@@ -268,6 +279,38 @@ main {
 .skills__logo {
     height: 2.4rem;
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;    
+}
+
+.projects__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card__title {
+    font-size: 1.5rem;    
+}
+
+.card__description {
+    font-size: 1rem;
+    color: var(--title-color--);
+}
+
+.card__buttons {
+    display: flex;
+}
+
+.card__list {
+    list-style: disc; /* coloca as bolinhas */
+    margin-left: 1.5rem; /* recuo para aparecer do lado de fora */
+    padding-left: 1rem; /* dá um espacinho interno */
+}
+
+
 
 footer {
     margin-bottom: 5rem;
@@ -306,7 +349,7 @@ footer p {
         font-size: 4rem;
     }
 
-    main {
+    main, .ux__projects {
         padding: 8rem 6rem 4rem 6rem;
     }
 
