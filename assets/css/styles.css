@@ -325,7 +325,7 @@ main {
 .card__cover {
   width: 100%;
   border-radius: 0.5rem;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -362,6 +362,11 @@ main {
 .card__buttons .btn span {
     font-size: 1rem;
 }
+
+.card__buttons a {
+  display: inline-flex; /* deixa o <a> ocupar apenas o tamanho do botão */
+}
+
 
 .card__body .technologies__list {
   gap: .75rem;
