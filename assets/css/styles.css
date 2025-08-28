@@ -694,3 +694,74 @@ footer p {
   }
 
 }
+
+
+/* --- Case Page Specific --- */
+
+.case1-page h1 {
+  margin-bottom: 1.25rem;
+}
+
+.case1-page h2 {
+  margin-bottom: 2.5rem;
+}
+
+.menu--principal .menu__item {
+  list-style: none; /* remove o marcador padrão */
+}
+
+.case1-page li {
+  list-style: disc;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+.card__case1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.card__case1 img {
+  width: 100%;
+  height: auto;
+}
+
+.case__mascot {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-diagram {
+  display: flex;
+  justify-content: center;
+}
+
+.cloudinha {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.wireframes-case1 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.name__screen, .id__screen, .address__screen {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.description__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
