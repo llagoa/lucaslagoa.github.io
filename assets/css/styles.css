@@ -687,6 +687,10 @@ footer p {
     padding: 0 1.5rem; /* respiro lateral */
   }
 
+  main.case {
+    padding-top: 6rem; /* altura aproximada do header */
+  }
+
 }
 
 @media (min-width: 1200px) {
