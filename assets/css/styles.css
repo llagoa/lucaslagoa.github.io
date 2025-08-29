@@ -676,6 +676,16 @@ footer p {
   .description__buttons .btn {
     width: auto;
   }
+
+  .name__screen, .id__screen, .address__screen {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+ .description__buttons {
+  gap: .8rem;
+ }
 }
 
 @media (min-width: 1400px) {
@@ -702,6 +712,8 @@ footer p {
   .ux__technologies, .projects, .about {
     padding: 10rem 15rem 4rem;
   }
+
+  
 
 }
 
