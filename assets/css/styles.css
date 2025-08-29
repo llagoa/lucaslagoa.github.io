@@ -540,7 +540,7 @@ footer p {
   .card__cloudinha,
   .card__address {
     display: flex;
-    flex-direction: column; /* empilha imagens */
+    flex-direction: row; /* empilha imagens */
     align-items: center;    /* centraliza horizontal */
     gap: 1.5rem;            /* espaçamento entre imagens */
     padding: 1rem;          /* padding interno */
@@ -588,7 +588,7 @@ footer p {
 
 @media (max-width: 991px) { 
   .name__screen, .id__screen, .address__screen {
-    flex-direction: column; /* coloca uma abaixo da outra */
+    flex-direction: row; /* coloca uma abaixo da outra */
     align-items: center;
     gap: 1.5rem;
     padding: 1rem;
