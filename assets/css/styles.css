@@ -529,89 +529,63 @@ footer p {
 }
 
 /* Responsividade */
+/* ===== Mobile: empilha imagens ===== */
 @media (max-width: 767px) {
+  /* telas específicas */
   .name__screen,
   .id__screen,
-  .address__screen {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem; /* reduz o gap para não ficar muito espaçado */
-    padding: 1rem;
+  .address__screen,
+  .card__nome,
+  .card__idpessoal,
+  .card__cloudinha,
+  .card__address {
+    display: flex;
+    flex-direction: column; /* empilha imagens */
+    align-items: center;    /* centraliza horizontal */
+    gap: 1.5rem;            /* espaçamento entre imagens */
+    padding: 1rem;          /* padding interno */
   }
 
   .name__screen img,
   .id__screen img,
-  .address__screen img {
-    max-width: 100%;
+  .address__screen img,
+  .card__nome img,
+  .card__idpessoal img,
+  .card__cloudinha img,
+  .card__address img {
+    max-width: 90%;
     height: auto;
   }
 }
 
+/* ===== Tablet e desktop: imagens lado a lado ===== */
 @media (min-width: 768px) {
-  .header {
-    position: fixed;
-    border-bottom: 1px solid var(--primary-border-color);
-    padding: 1rem 6rem;
-    background: var(--primary-bg-color);
-  }
-
-  .nav--mobile {
-    display: none;
-  }
-
-  .header__nav {
+  .name__screen,
+  .id__screen,
+  .address__screen,
+  .card__nome,
+  .card__idpessoal,
+  .card__cloudinha,
+  .card__address {
     display: flex;
+    flex-direction: row;  /* lado a lado */
+    align-items: center;  /* alinha topo se imagens forem diferentes */
+    gap: 2rem;            /* espaçamento entre imagens */
+    padding: 2rem;         /* padding interno */
   }
 
-  .header__nav,
-  .header__toggle {
-    min-width: 30%;
+  .name__screen img,
+  .id__screen img,
+  .address__screen img,
+  .card__nome img,
+  .card__idpessoal img,
+  .card__cloudinha img,
+  .card__address img {
+    max-width: 100%;      /* limite de largura para não extrapolar */
+    height: auto;
   }
-
-  h1 {
-    font-size: 5rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  main, .projects, .about {
-    padding: 8rem 6rem 4rem 6rem;
-  }
-
-  .contact {
-    padding: 6rem;
-  }
-  .contact p {
-    width: 80%;
-  }
-
-  .main__content1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .ux__technologies {
-    padding: 6.25rem 6rem 2rem 6rem;
-    margin-top: -6rem;
-  }
-
-  footer {
-    margin: 0;
-  }
-
-  .name__screen, .id__screen, .address__screen {
-    flex-direction: row;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
- .description__buttons {
-  gap: .5rem;
- }
 }
+
 
 @media (min-width: 992px) {
   .projects__card {
