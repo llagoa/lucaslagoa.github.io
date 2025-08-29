@@ -882,3 +882,17 @@ main.case {
   height: auto;     /* mantém a proporção */
   display: block;
 }
+
+
+@media (min-width: 768px) {
+  .header {
+    position: fixed;
+    border-bottom: 1px solid var(--primary-border-color);
+    padding: 1rem 6rem;
+    background: var(--primary-bg-color);
+  }
+
+  main.case {
+    padding: 8rem 6rem 4rem 6rem;
+  }
+}
