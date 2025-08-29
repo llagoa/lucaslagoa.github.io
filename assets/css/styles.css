@@ -579,6 +579,16 @@ footer p {
   footer {
     margin: 0;
   }
+
+  .name__screen, .id__screen, .address__screen {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+ .description__buttons {
+  gap: .5rem;
+ }
 }
 
 @media (min-width: 992px) {
@@ -764,4 +774,24 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+main.case {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem; /* respiro lateral no mobile */
+}
+
+.wireframes-case1 {
+  display: flex;
+  justify-content: center; /* centraliza horizontal */
+  align-items: center;     /* centraliza vertical se tiver altura fixa */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wireframes-case1 img {
+  max-width: 100%;  /* não deixa a imagem estourar */
+  height: auto;     /* mantém a proporção */
+  display: block;
 }
