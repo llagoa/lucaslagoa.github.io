@@ -599,7 +599,7 @@ footer p {
   }
 
   .name__screen, .id__screen, .address__screen {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 1.5rem;
   }
