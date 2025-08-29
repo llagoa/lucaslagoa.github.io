@@ -849,4 +849,6 @@ section li {
   list-style: disc;
 }
 
-
+.description__buttons {
+  gap: 1.5rem;
+}
