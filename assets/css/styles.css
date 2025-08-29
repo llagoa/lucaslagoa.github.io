@@ -586,6 +586,22 @@ footer p {
   }
 }
 
+@media (max-width: 991px) { 
+  .name__screen, .id__screen, .address__screen {
+    flex-direction: column; /* coloca uma abaixo da outra */
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .name__screen img,
+  .id__screen img,
+  .address__screen img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
 
 @media (min-width: 992px) {
   .projects__card {
