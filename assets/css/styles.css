@@ -556,6 +556,23 @@ footer p {
     max-width: 90%;
     height: auto;
   }
+
+    main.case section {
+    padding: 1.5rem 1rem; /* aumenta o espaçamento interno das seções */
+  }
+
+  main.case section p,
+  main.case section ul {
+    font-size: 1rem;      /* opcional, reduz um pouco o tamanho da fonte se necessário */
+    line-height: 1.6;     /* aumenta o espaçamento entre linhas */
+  }
+
+  main.case section h1,
+  main.case section h2,
+  main.case section h3 {
+    line-height: 1.2;     /* dá respiro nos títulos */
+    margin-bottom: 1rem;  /* separa títulos do texto */
+  }
 }
 
 /* ===== Tablet e desktop: imagens lado a lado ===== */
