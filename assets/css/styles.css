@@ -653,6 +653,40 @@ footer p {
   gap: .9rem;
  }
 
+ .name__screen,
+  .id__screen,
+  .address__screen {
+    flex-direction: column; /* imagens em coluna */
+    align-items: center;    /* centraliza horizontal */
+    gap: 1.5rem;
+    padding: 1.5rem;       /* respiro lateral suficiente */
+  }
+
+  .name__screen img,
+  .id__screen img,
+  .address__screen img {
+    max-width: 100%; /* não deixa extrapolar a tela */
+    height: auto;
+  }
+
+  .wireframes-case1,
+  .cloudinha,
+  .user-diagram {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .wireframes-case1 img,
+  .cloudinha img,
+  .user-diagram img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  main.case {
+    padding: 0 1.5rem; /* respiro lateral */
+  }
+
 }
 
 @media (min-width: 1200px) {
