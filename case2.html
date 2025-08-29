@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Lagoa | UX/UI and Front-end Portfolio</title>
+  <meta name="description" content="Front-end developer Lucas Lagoa's portfolio to share projects and skills developed.">
+
+  <link rel="shortcut icon" href="assets/favicon_io/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="case2-page">
+
+<header class="header">
+  <nav class="header__nav">
+    <ul class="menu menu--principal">
+      <li class="menu__item">
+        <a class="menu__link" href="index.html">
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="header__brand">
+    <a href="#home">
+      <img class="brand__logo" src="assets/img/icons/logo.png" alt="Logo Lucas Lagoa" height="64" width="64">
+    </a>
+  </div>
+  <div class="header__toggle">
+    <i id="toggleTheme" class="bi bi-sun"></i>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section>
+    <h1>Redesigning the Nubo App</h1>
+    <p>
+      A complete redesign of two key flows — Home and Profile — to reduce friction and help students preparing for Brazil’s entrance exams join classes faster.
+    </p>
+    <ul>
+      <li><strong>My role:</strong> Lead UX/UI decision-maker</li>
+      <li><strong>Team:</strong> 3 designers (I led most decisions)</li>
+      <li><strong>Timeline:</strong> 1 week (design → shipped)</li>
+      <li><strong>Focus:</strong> Mobile-first, speed of access to live classes</li>
+    </ul>
+    <div class="card">
+      <img src="assets/cases/case2/Home - Aula ao vivo.png" alt="Nubo home screen redesign">
+    </div>
+  </section>
+
+  <!-- CONTEXT -->
+  <section>
+    <h2>Context</h2>
+    <p>
+      Nubo is an app for high-school students preparing for ENEM and other entrance exams. The product existed, but its structure didn’t match how students navigated or consumed content. Students are often stressed and in a hurry — the product needed to respect that mindset.
+    </p>
+  </section>
+
+  <!-- PROBLEM -->
+  <section>
+    <h2>Problem</h2>
+    <p>
+      The Home and Profile screens made the critical task — joining a live class — unnecessarily difficult. Students had no clear visibility of what was live, no intuitive schedule, and were abruptly redirected to external tools. Leadership reported ~90% abandonment during the year, ending with only ~16 active students in 2024.
+    </p>
+  </section>
+
+  <!-- PROCESS -->
+  <section>
+    <h2>Process & Trade-offs</h2>
+    <p>
+      With only one week, we focused on removing friction. I facilitated alignment between product, design, and engineering, making trade-offs to deliver a smaller scope with higher quality.
+    </p>
+    <p>
+      We had to postpone the Agenda feature (deadlines, simulados, essays) despite having mid-fi wireframes. Instead, we prioritized: clear “Live now” entry, simpler navigation, and predictable external redirects.
+    </p>
+    <div class="card">
+      <img src="assets/cases/nubo/wireframe-home.png" alt="Wireframe Home screen">
+    </div>
+    <div class="card">
+      <img src="assets/cases/nubo/wireframe-profile.png" alt="Wireframe Profile screen">
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section>
+    <h2>Design Solutions</h2>
+    <h3>Home</h3>
+    <ul>
+      <li>Live-first layout — “Currently Happening” at the top</li>
+      <li>Upcoming Broadcasts list for the day</li>
+      <li>Redirect confirmation modal before leaving to Google Meet/YouTube</li>
+    </ul>
+    <div class="card">
+      <img src="assets/cases/nubo/mockup-home.png" alt="Mockup Home redesign">
+    </div>
+
+    <h3>Profile</h3>
+    <ul>
+      <li>Display of student name, RA, and enrollment status</li>
+      <li>Clear Full-time vs Part-time distinction</li>
+      <li>Simple photo upload flow (camera, gallery, or mascot avatar)</li>
+    </ul>
+    <div class="card">
+      <img src="assets/cases/nubo/mockup-profile.png" alt="Mockup Profile redesign">
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section>
+    <h2>Results</h2>
+    <ul>
+      <li>Zero confusion reports at launch</li>
+      <li>Students praised clarity and usability (testimonials below)</li>
+      <li>Historic engagement decline reduced by ~45% after launch</li>
+    </ul>
+    <div class="card">
+      <img src="assets/cases/nubo/testimonials.png" alt="Student testimonials praising the new app">
+    </div>
+  </section>
+
+  <!-- LEARNINGS -->
+  <section>
+    <h2>Learnings</h2>
+    <p>
+      Leading decisions under pressure taught me to balance speed and quality. I learned how to prioritize essential features, make trade-offs, and keep alignment across teams. Clarity and simplicity beat complexity every time.
+    </p>
+  </section>
+
+  <!-- CONCLUSION -->
+  <section>
+    <h2>Conclusion</h2>
+    <p>
+      This redesign wasn’t just UI polish — it was a focused effort to let students access what matters most: live classes, in less than 3 taps. By shipping a smaller but higher-quality scope, we built trust with students and leadership, and created a foundation for future improvements like the Agenda and teacher dashboards.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025. All rights reserved. Lucas Lagoa. Developed for <a href="https://github.com/llagoa">LL</a>.</p>
+</footer>
+
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

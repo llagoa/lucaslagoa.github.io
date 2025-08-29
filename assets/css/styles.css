@@ -243,7 +243,11 @@ p {
   border: 1px solid var(--primary-color);
 }
 
-main, .projects, .about, .contact {
+main,
+.projects,
+.about,
+.contact,
+.case__intro {
   padding: 2.5rem 1rem;
 }
 
@@ -793,101 +797,56 @@ footer p {
 }
 
 
-/* --- Case Page Specific --- */
-
-.case1-page h1 {
-  margin-bottom: 1.25rem;
-}
-
-.case1-page h2 {
-  margin-bottom: 2.5rem;
-}
-
-.menu--principal .menu__item {
-  list-style: none; /* remove o marcador padrão */
-}
-
-.case1-page li {
-  list-style: disc;
-}
-
-section {
-  margin-bottom: 2.5rem;
-}
-
-.card__case1 {
+/* css case1 */
+.card__center {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-bottom: 1.25rem;
+  margin: 2rem 0;
 }
 
-.card__case1 img {
-  width: 100%;
-  height: auto;
-}
-
-.case__mascot {
-  display: flex;
-  flex-direction: column;
-}
-
-.user-diagram {
+.card__userdiagram, .card__welcome {
   display: flex;
   justify-content: center;
 }
 
-.cloudinha {
+.card__nome, .card__idpessoal,
+.card__cloudinha {
   display: flex;
   justify-content: center;
-  padding: 2rem;
-}
-
-.wireframes-case1 {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.name__screen, .id__screen, .address__screen {
-  display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
   gap: 3rem;
   padding: 2rem;
 }
 
-.description__buttons {
+.card__address {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-main.case {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 1.5rem; /* respiro lateral no mobile */
+.card__address img {
+  height: auto;
+  width: auto;
 }
 
-.wireframes-case1 {
-  display: flex;
-  justify-content: center; /* centraliza horizontal */
-  align-items: center;     /* centraliza vertical se tiver altura fixa */
-  width: 100%;
-  margin: 0 auto;
+section {
+  padding: 3rem;
 }
 
-.wireframes-case1 img {
-  max-width: 100%;  /* não deixa a imagem estourar */
-  height: auto;     /* mantém a proporção */
-  display: block;
+section h2 {
+  margin-bottom: 1.5rem;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section li {
+  list-style: disc;
 }
 
 
-@media (min-width: 768px) and (max-width: 991px) {
-  main.case {
-    padding-top: 9rem; /* cobre header melhor sem exagerar */
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
