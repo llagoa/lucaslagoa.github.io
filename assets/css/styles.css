@@ -624,6 +624,17 @@ footer p {
   .description__buttons {
     justify-content: flex-start;
   }
+
+  .name__screen, .id__screen, .address__screen {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+ .description__buttons {
+  gap: .9rem;
+ }
+
 }
 
 @media (min-width: 1200px) {
@@ -713,7 +724,15 @@ footer p {
     padding: 10rem 15rem 4rem;
   }
 
+  .name__screen, .id__screen, .address__screen {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
   
+ .description__buttons {
+  gap: 1rem;
+ }
 
 }
 
