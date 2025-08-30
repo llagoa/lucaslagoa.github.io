@@ -170,7 +170,9 @@ p {
   bottom: 0;
   justify-content: space-between;
   border-top: 1px solid var(--primary-border-color);
+  list-style: none;
 }
+
 
 .menu--mobile .menu__link {
   flex-direction: column;
@@ -243,11 +245,7 @@ p {
   border: 1px solid var(--primary-color);
 }
 
-main,
-.projects,
-.about,
-.contact,
-.case__intro {
+main, .projects, .about, .contact {
   padding: 2.5rem 1rem;
 }
 
@@ -266,6 +264,13 @@ main {
 .main__content2 iframe {
   width: 100%;
   aspect-ratio: 16/9;
+}
+
+.menu--mobile {
+  list-style: none !important;
+}
+.menu--mobile .menu__item {
+  list-style: none !important;
 }
 
 .ux__technologies {
@@ -529,121 +534,62 @@ footer p {
 }
 
 /* Responsividade */
-/* ===== Mobile: empilha imagens ===== */
-@media (max-width: 767px) {
-  /* telas específicas */
-  .name__screen,
-  .id__screen,
-  .address__screen,
-  .card__nome,
-  .card__idpessoal,
-  .card__cloudinha,
-  .card__address {
-    display: flex;
-    flex-direction: column; /* empilha imagens */
-    align-items: center;    /* centraliza horizontal */
-    gap: 1.5rem;            /* espaçamento entre imagens */
-    padding: 1rem;          /* padding interno */
-  }
-
-  .name__screen img,
-  .id__screen img,
-  .address__screen img,
-  .card__nome img,
-  .card__idpessoal img,
-  .card__cloudinha img,
-  .card__address img {
-    max-width: 90%;
-    height: auto;
-  }
-  
-    /* padding lateral igual ao index */
-  main.case1-page {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 2rem; /* ajuste se precisar de respiro no topo */
-  }
-
-  /* textos ocupando mais espaço, fonte legível */
-  .case1-page p,
-  .case1-page ul,
-  .case1-page h1,
-  .case1-page h2,
-  .case1-page h3 {
-    max-width: 100%;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-
-  /* imagens já configuradas para mobile */
-  .case1-page .card__nome,
-  .case1-page .card__idpessoal,
-  .case1-page .card__cloudinha,
-  .case1-page .card__address,
-  .case1-page .name__screen,
-  .case1-page .id__screen,
-  .case1-page .address__screen {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-
-  .case1-page img {
-    max-width: 90%;
-    height: auto;
-  }
-
-  /* espaçamento entre sections */
-  .case1-page section {
-    margin-bottom: 2.5rem;
-  }
-}
-
-/* ===== Tablet e desktop: imagens lado a lado ===== */
 @media (min-width: 768px) {
-  .name__screen,
-  .id__screen,
-  .address__screen,
-  .card__nome,
-  .card__idpessoal,
-  .card__cloudinha,
-  .card__address {
+  .header {
+    position: fixed;
+    border-bottom: 1px solid var(--primary-border-color);
+    padding: 1rem 6rem;
+    background: var(--primary-bg-color);
+  }
+
+  .nav--mobile {
+    display: none;
+  }
+
+  .header__nav {
     display: flex;
-    flex-direction: row;  /* lado a lado */
-    align-items: center;
-    justify-content: center;  /* alinha topo se imagens forem diferentes */
-    gap: 2rem;            /* espaçamento entre imagens */
-    padding: 2rem;         /* padding interno */
   }
 
-  .name__screen img,
-  .id__screen img,
-  .address__screen img,
-  .card__nome img,
-  .card__idpessoal img,
-  .card__cloudinha img,
-  .card__address img {
-    max-width: 100%;      /* limite de largura para não extrapolar */
-    height: auto;
-  }
-}
-@media (max-width: 991px) { 
-  .name__screen, .id__screen, .address__screen {
-    flex-direction: column; /* coloca uma abaixo da outra */
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1rem;
+  .header__nav,
+  .header__toggle {
+    min-width: 30%;
   }
 
-  .name__screen img,
-  .id__screen img,
-  .address__screen img {
-    max-width: 90%;
-    height: auto;
+  h1 {
+    font-size: 5rem;
   }
-}
 
+  h2 {
+    font-size: 3rem;
+  }
+
+  main, .projects, .about {
+    padding: 8rem 6rem 4rem 6rem;
+  }
+
+  .contact {
+    padding: 6rem;
+  }
+  .contact p {
+    width: 80%;
+  }
+
+  .main__content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ux__technologies {
+    padding: 6.25rem 6rem 2rem 6rem;
+    margin-top: -6rem;
+  }
+
+  footer {
+    margin: 0;
+  }
+
+  }
 
 @media (min-width: 992px) {
   .projects__card {
@@ -678,55 +624,6 @@ footer p {
   .description__buttons {
     justify-content: flex-start;
   }
-
-  .name__screen, .id__screen, .address__screen {
-    flex-direction: row;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
- .description__buttons {
-  gap: .9rem;
- }
-
- .name__screen,
-  .id__screen,
-  .address__screen {
-    flex-direction: column; /* imagens em coluna */
-    align-items: center;    /* centraliza horizontal */
-    gap: 1.5rem;
-    padding: 1.5rem;       /* respiro lateral suficiente */
-  }
-
-  .name__screen img,
-  .id__screen img,
-  .address__screen img {
-    max-width: 100%; /* não deixa extrapolar a tela */
-    height: auto;
-  }
-
-  .wireframes-case1,
-  .cloudinha,
-  .user-diagram {
-    flex-direction: column;
-    padding: 1.5rem;
-  }
-
-  .wireframes-case1 img,
-  .cloudinha img,
-  .user-diagram img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  main.case {
-    padding: 0 1.5rem; /* respiro lateral */
-  }
-
-  main.case {
-    padding-top: 6rem; /* altura aproximada do header */
-  }
-
 }
 
 @media (min-width: 1200px) {
@@ -779,16 +676,6 @@ footer p {
   .description__buttons .btn {
     width: auto;
   }
-
-  .name__screen, .id__screen, .address__screen {
-    flex-direction: row;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
- .description__buttons {
-  gap: .8rem;
- }
 }
 
 @media (min-width: 1400px) {
@@ -816,71 +703,87 @@ footer p {
     padding: 10rem 15rem 4rem;
   }
 
-  .name__screen, .id__screen, .address__screen {
-    flex-direction: row;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
- .description__buttons {
-  gap: 1rem;
- }
-
 }
 
 
-/* css case1 */
-.card__center {
+/* --- Case1 CSS --- */
+
+.case1-page h1 {
+  margin-bottom: 1.25rem;
+}
+
+.case1-page h2 {
+  margin-bottom: 2.5rem;
+}
+
+.menu--principal .menu__item {
+  list-style: none; /* remove o marcador padrão */
+}
+
+.case1-page li {
+  list-style: disc;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+.card__case1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  width: 100%;
+  margin-bottom: 1.25rem;
 }
 
-.card__userdiagram, .card__welcome {
+.card__case1 img {
+  width: 100%;
+  height: auto;
+}
+
+.case__mascot {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-diagram {
   display: flex;
   justify-content: center;
 }
 
-.card__nome, .card__idpessoal,
-.card__cloudinha {
+.cloudinha {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2.5rem;
+  padding: 2rem;
+}
+
+.wireframes-case1 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.name__screen, .id__screen, .address__screen {
+  display: flex;
+  justify-content: center;
   gap: 3rem;
   padding: 2rem;
 }
 
-.card__address {
+.description__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
+  align-items: center;
+  gap: 2.5rem;
   padding: 2rem;
 }
 
-.card__address img {
-  height: auto;
-  width: auto;
-}
-
-section {
-  padding: 3rem;
-}
-
-section h2 {
-  margin-bottom: 1.5rem;
-}
-
-section p {
-  margin-top: 0;
-}
-
-section li {
-  list-style: disc;
-}
-
-.description__buttons {
-  gap: 1.5rem;
+.card__address {
+  align-items: flex-start;
 }
