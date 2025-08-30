@@ -585,6 +585,18 @@ footer p {
     margin-top: -6rem;
   }
 
+  .card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+    .card > img {
+    width: auto;         /* para não forçar 100% no desktop */
+    flex: 1 1 0;         /* cada uma ocupa ~50% do card */
+    max-width: 100%;
+  }
+
   footer {
     margin: 0;
   }
@@ -778,10 +790,17 @@ section {
 
 .card {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
   padding: 2rem;
+}
+
+.card > img {
+  display: block;
+  width: 100%;      /* no mobile, cada img ocupa 100% */
+  height: auto;
 }
 
 .card__address {
