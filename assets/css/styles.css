@@ -798,11 +798,32 @@ section {
 }
 
 .card > img {
-  display: block;
-  width: 100%;      /* no mobile, cada img ocupa 100% */
+  max-width: 30%;
   height: auto;
+  flex: 1 1 auto;
+  object-fit: contain;
+  
 }
 
 .card__address {
   align-items: flex-start;
+}
+
+.card__single {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.card__single > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card__diagram, .card__welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
