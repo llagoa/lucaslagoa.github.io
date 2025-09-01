@@ -635,6 +635,13 @@ footer p {
     gap: 4rem;
   }
 
+   .ux__technologies {
+    display: flex;
+    flex-direction: column;
+    padding: 6.25rem 6rem 2rem 6rem;
+    margin-top: -6rem;
+  }
+
   .about__description h2 {
     text-align: left;
   }
