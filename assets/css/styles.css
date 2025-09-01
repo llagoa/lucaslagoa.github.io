@@ -581,6 +581,8 @@ footer p {
   }
 
   .ux__technologies {
+    display: flex;
+    flex-direction: column;
     padding: 6.25rem 6rem 2rem 6rem;
     margin-top: -6rem;
   }
