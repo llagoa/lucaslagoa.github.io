@@ -581,8 +581,6 @@ footer p {
   }
 
   .ux__technologies {
-    display: flex;
-    flex-direction: column;
     padding: 6.25rem 6rem 2rem 6rem;
     margin-top: -6rem;
   }
@@ -609,7 +607,7 @@ footer p {
 
   }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .projects__card {
     flex-direction: row;
   }
@@ -633,13 +631,6 @@ footer p {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 4rem;
-  }
-
-   .ux__technologies {
-    display: flex;
-    flex-direction: column;
-    padding: 6.25rem 6rem 2rem 6rem;
-    margin-top: -6rem;
   }
 
   .about__description h2 {
@@ -750,7 +741,7 @@ footer p {
   list-style: none; /* remove o marcador padrão */
 }
 
-.case1-page li, .case2-page li {
+.case1-page li {
   list-style: disc;
 }
 
@@ -844,21 +835,4 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* CSS App Redesign */
-
-.card__home-profile {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.case2-page h1 {
-  margin-bottom: 1.25rem;
-}
-
-.case2-page h2 {
-  margin-bottom: 2.5rem;
 }
