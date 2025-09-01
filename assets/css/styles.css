@@ -597,13 +597,17 @@ footer p {
     max-width: 100%;
   }
 
+  .description__buttons {
+    gap: 1rem;
+  }
+
   footer {
     margin: 0;
   }
 
   }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .projects__card {
     flex-direction: row;
   }
@@ -635,6 +639,7 @@ footer p {
 
   .description__buttons {
     justify-content: flex-start;
+    gap: 1rem;
   }
 }
 
@@ -688,6 +693,10 @@ footer p {
   .description__buttons .btn {
     width: auto;
   }
+
+  .description__buttons {
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -732,7 +741,7 @@ footer p {
   list-style: none; /* remove o marcador padrão */
 }
 
-.case1-page li {
+.case1-page li, .case2-page li {
   list-style: disc;
 }
 
@@ -826,4 +835,21 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* CSS App Redesign */
+
+.card__home-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.case2-page h1 {
+  margin-bottom: 1.25rem;
+}
+
+.case2-page h2 {
+  margin-bottom: 2.5rem;
 }
