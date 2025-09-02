@@ -836,3 +836,13 @@ section {
   align-items: center;
   justify-content: center;
 }
+
+/* Cas2 CSS */
+
+.case2-page li {
+  list-style: disc;
+}
+
+.case2-page h2, .case2-page h1 {
+  margin-bottom: 1.5rem;
+}
