@@ -820,6 +820,7 @@ section {
 
 .card__single {
   display: flex;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
   padding: 2rem;
