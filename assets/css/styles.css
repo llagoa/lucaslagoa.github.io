@@ -1,14 +1,14 @@
+/* ===== IMPORTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
 
+/* ===== CSS VARIABLES ===== */
 :root, :root[data-theme='dark'] {
   --primary-color: #F0F0F0;
-
   --primary-bg-color: #111217;
   --secondary-bg-color: #28292E;
   --primary-border-color: #28292E;
   --secondary-border-color: #56575A;
-
   --title-color: #F0F0F0;
   --text-color: #9A9A9C;
   --link-color: #9A9A9C;
@@ -17,24 +17,19 @@
 
 :root[data-theme='light'] {
   --primary-color: #0B0B0F;
-
   --primary-bg-color: #E9E9E9;
   --secondary-bg-color: #C7C8C9;
   --primary-border-color: #C7C8C9;
   --secondary-border-color: #9A9A9C;
-
   --title-color: #0B0B0F;
   --text-color: #28292E;
   --link-color: #28292E;
   --icon-color: #56575A;
 }
 
-html[data-theme='light'] .brand__logo {
-  filter: invert(1);
-}
-
+/* ===== RESET & BASE STYLES ===== */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -49,10 +44,11 @@ html {
 
 body {
   background: var(--primary-bg-color);
-  font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
 }
 
+/* ===== SCROLLBAR STYLES ===== */
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -66,21 +62,12 @@ body {
   border-radius: 50rem;
 }
 
-a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-a:hover {
-  color: var(--primary-color);
-}
-
-i {
-  color: var(--icon-color);
-}
-
-b {
-  font-weight: 400;
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3 {
+  font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: var(--title-color);
+  font-weight: 200;
 }
 
 h1 {
@@ -107,13 +94,6 @@ h4 {
   text-align: left;
 }
 
-h1, h2, h3 {
-  font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
-  color: var(--title-color);
-  font-weight: 200;
-}
-
 p, span, li {
   font-size: 1rem;
 }
@@ -122,6 +102,59 @@ p {
   text-align: justify;
 }
 
+b {
+  font-weight: 400;
+}
+
+/* ===== LINKS & INTERACTIVE ELEMENTS ===== */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+i {
+  color: var(--icon-color);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  background: transparent;
+  border-radius: 3.125rem;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  transition: ease-in-out .3s;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: ease-in-out .3s;
+}
+
+.btn span, .btn i {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.btn--primary {
+  border: 1px solid var(--primary-color);
+}
+
+.btn--primary span {
+  color: var(--primary-color);
+}
+
+/* ===== HEADER COMPONENT ===== */
 .header {
   display: flex;
   flex-flow: row wrap;
@@ -149,6 +182,11 @@ p {
   transition: ease-in-out .4s;
 }
 
+html[data-theme='light'] .brand__logo {
+  filter: invert(1);
+}
+
+/* ===== NAVIGATION COMPONENT ===== */
 .menu {
   display: flex;
   align-items: center;
@@ -174,11 +212,18 @@ p {
   list-style: none;
 }
 
-
 .menu--mobile .menu__link {
   flex-direction: column;
   justify-content: center;
   padding: 0.5rem 1rem;
+}
+
+.menu--mobile {
+  list-style: none !important;
+}
+
+.menu--mobile .menu__item {
+  list-style: none !important;
 }
 
 .menu__link.active .menu__icon, 
@@ -209,43 +254,15 @@ p {
   gap: 1rem;
 }
 
+.menu--principal .menu__item {
+  list-style: none;
+}
+
 .menu--social {
   gap: 1rem;
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  width: 100%;
-  background: transparent;
-  border-radius: 3.125rem;
-  border: none;
-  padding: 0.875rem 1.5rem;
-  transition: ease-in-out .3s;
-  cursor: pointer;
-  color: var(--primary-color);
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  transition: ease-in-out .3s;
-}
-
-.btn span, .btn i {
-  font-size: 1.25rem;
-  text-transform: uppercase;
-}
-
-.btn--primary span {
-  color: var(--primary-color);
-}
-
-.btn--primary {
-  border: 1px solid var(--primary-color);
-}
-
+/* ===== MAIN LAYOUT ===== */
 main, .projects, .about, .contact {
   padding: 2.5rem 1rem;
 }
@@ -267,13 +284,7 @@ main {
   aspect-ratio: 16/9;
 }
 
-.menu--mobile {
-  list-style: none !important;
-}
-.menu--mobile .menu__item {
-  list-style: none !important;
-}
-
+/* ===== TECHNOLOGIES SECTION ===== */
 .ux__technologies {
   display: flex;
   flex-direction: column;
@@ -314,6 +325,7 @@ main {
   height: 2.4rem;
 }
 
+/* ===== PROJECTS SECTION ===== */
 .projects {
   display: flex;
   flex-direction: column;
@@ -332,6 +344,12 @@ main {
   gap: 2rem;
 }
 
+.projects .btn {
+  width: auto;
+  margin: auto;
+}
+
+/* ===== CARD COMPONENT ===== */
 .card__cover {
   width: 100%;
   border-radius: 0.5rem;
@@ -352,7 +370,7 @@ main {
 }
 
 .card__list, .about__list {
-  margin-left: 1.25rem
+  margin-left: 1.25rem;
 }
 
 .card__item, .about__item {
@@ -370,13 +388,12 @@ main {
 }
 
 .card__buttons .btn span {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .card__buttons a {
-  display: inline-flex; /* deixa o <a> ocupar apenas o tamanho do botão */
+  display: inline-flex;
 }
-
 
 .card__body .technologies__list {
   gap: .75rem;
@@ -391,15 +408,11 @@ main {
   height: 2rem;
 }
 
-.projects .btn {
-  width: auto;
-  margin: auto;
-}
-
+/* ===== ABOUT SECTION ===== */
 .about {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem
+  gap: 1.5rem;
 }
 
 .about__content1, .about__content2 {
@@ -451,6 +464,7 @@ main {
   gap: .5rem; 
 }
 
+/* ===== ACCORDION COMPONENT ===== */
 .accordion__header {
   width: 100%;
   display: flex;
@@ -488,7 +502,7 @@ main {
   align-items: flex-start;
   gap: 0.625rem;
   border: 1px solid var(--primary-border-color);
-  }
+}
 
 .accordion__item.active .accordion__header {
   background: var(--secondary-bg-color);
@@ -502,6 +516,7 @@ main {
   transform: rotate(180deg);
 }
 
+/* ===== CONTACT SECTION ===== */
 .contact {
   display: flex;
   flex-direction: column;
@@ -524,6 +539,7 @@ main {
   text-transform: lowercase;
 }
 
+/* ===== FOOTER ===== */
 footer {
   margin-bottom: 5rem;
 }
@@ -534,7 +550,7 @@ footer p {
   padding: 1rem;
 }
 
-/* Responsividade */
+/* ===== RESPONSIVE DESIGN ===== */
 @media (min-width: 768px) {
   .header {
     position: fixed;
@@ -571,6 +587,7 @@ footer p {
   .contact {
     padding: 6rem;
   }
+
   .contact p {
     width: 80%;
   }
@@ -592,9 +609,9 @@ footer p {
     align-items: flex-start;
   }
 
-    .card > img {
-    width: auto;         /* para não forçar 100% no desktop */
-    flex: 1 1 0;         /* cada uma ocupa ~50% do card */
+  .card > img {
+    width: auto;
+    flex: 1 1 0;
     max-width: 100%;
   }
 
@@ -603,13 +620,11 @@ footer p {
     gap: 1rem;
     justify-content: center;
   }
-  
 
   footer {
     margin: 0;
   }
-
-  }
+}
 
 @media (min-width: 992px) {
   .projects__card {
@@ -648,7 +663,6 @@ footer p {
 }
 
 @media (min-width: 1200px) {
-
   h2 {
     font-size: 4rem;
   }
@@ -727,22 +741,17 @@ footer p {
   .ux__technologies, .projects, .about {
     padding: 10rem 15rem 4rem;
   }
-
 }
 
+/* ===== PAGE-SPECIFIC STYLES ===== */
 
-/* --- Case1 CSS --- */
-
+/* --- Case1 Page Styles --- */
 .case1-page h1 {
   margin-bottom: 1.25rem;
 }
 
 .case1-page h2 {
   margin-bottom: 2.5rem;
-}
-
-.menu--principal .menu__item {
-  list-style: none; /* remove o marcador padrão */
 }
 
 .case1-page li {
@@ -815,7 +824,6 @@ section {
   height: auto;
   flex: 1 1 auto;
   object-fit: contain;
-  
 }
 
 .card__address {
@@ -842,8 +850,7 @@ section {
   justify-content: center;
 }
 
-/* Cas2 CSS */
-
+/* --- Case2 Page Styles --- */
 .case2-page li {
   list-style: disc;
 }
