@@ -598,8 +598,11 @@ footer p {
   }
 
   .description__buttons {
+    display: flex;
     gap: 1rem;
+    justify-content: center;
   }
+  
 
   footer {
     margin: 0;

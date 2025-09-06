@@ -78,28 +78,23 @@
 
 <main>
 
-  <!-- HERO -->
+  <!-- INTRO / HERO -->
   <section>
     <h1>Redesigning the Nubo App</h1>
     <p>
       A complete redesign of two key flows — Home and Profile — to reduce friction and help students preparing for Brazil’s entrance exams join classes faster.
     </p>
-    <ul>
-      <li><strong>My role:</strong> Lead UX/UI decision-maker</li>
-      <li><strong>Team:</strong> 3 designers (I led most decisions)</li>
-      <li><strong>Timeline:</strong> 1 week (design → shipped)</li>
-      <li><strong>Focus:</strong> Mobile-first, speed of access to live classes</li>
-    </ul>
+
     <div class="card card__single">
-      <img class="card__cover" src="assets/img/Mockups Nubo/App redesign.png" alt="Nubo home screen redesign" >
-    </div>
-    <div class="description__buttons">
-      <a href="https://www.figma.com/proto/yCVNyeWdX6cvO3VZbRRoHL/Portolio-dev?page-id=59%3A6660&node-id=59-6796&viewport=212%2C82%2C0.22&t=1q5jx1Z2L1ho9Eb5-1&scaling=min-zoom&content-scaling=fixed" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
-          <span>Preview</span>
-      </a>
+      <img class="card__cover" src="assets/img/Mockups Nubo/App redesign.png" alt="Nubo home screen redesign">
     </div>
 
-    
+    <div class="description__buttons">
+      <a href="https://www.figma.com/proto/yCVNyeWdX6cvO3VZbRRoHL/Portolio-dev?page-id=59%3A6660&node-id=59-6796&viewport=212%2C82%2C0.22&t=1q5jx1Z2L1ho9Eb5-1&scaling=min-zoom&content-scaling=fixed" 
+         target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+        <span>Preview</span>
+      </a>
+    </div>
   </section>
 
   <!-- CONTEXT -->
@@ -118,84 +113,82 @@
     </p>
   </section>
 
-  <!-- PROCESS -->
+  <!-- STRATEGY & PROCESS -->
   <section>
-    <h2>Process & Trade-offs</h2>
+    <h2>Problem Analysis & Strategy</h2>
     <p>
       With only one week, we focused on removing friction. I facilitated alignment between product, design, and engineering, making trade-offs to deliver a smaller scope with higher quality.
     </p>
     <p>
       We had to postpone the Agenda feature (deadlines, simulados, essays) despite having mid-fi wireframes. Instead, we prioritized: clear “Live now” entry, simpler navigation, and predictable external redirects.
     </p>
-    <div class="card ">
+
+    <div class="card">
       <img src="assets/cases/case2/Home-screen.png" alt="Wireframe Home screen">
-    </div>    
+    </div>
   </section>
 
-  <!-- Explorations & Wireframes -->
-<section class="case__section container">
-  <h2>Explorations & Wireframes</h2>
-  <p>
-    Even within a one-week deadline, I created mid-fidelity wireframes to explore different layouts. 
-    Some explorations were implemented, others were postponed (like the Agenda). These explorations helped clarify priorities.
-  </p>
+  <!-- WIREFRAMES -->
+  <section>
+    <h2>Explorations & Wireframes</h2>
+    <p>
+      Even within a one-week deadline, I created mid-fidelity wireframes to explore different layouts. Some explorations were implemented, others were postponed (like the Agenda). These explorations helped clarify priorities.
+    </p>
 
-  <div class="wireframes-case2">
-    <!-- Aulas wireframes -->
-    <figure class="card__single">
-      <img src="assets/cases/case2/mid-fidelity/class-flow.jpg" alt="Mid-fi wireframes for Classes flow">
-      <figcaption>
-        <strong>Classes flow (mid-fi):</strong> explored ways to present live and recorded classes, categories (e.g., Natureza, Biologia), and content detail.
-      </figcaption>
-    </figure>
+    <div class="wireframes-case2">
+      <figure class="card__single">
+        <img src="assets/cases/case2/mid-fidelity/class-flow.jpg" alt="Mid-fi wireframes for Classes flow">
+        <figcaption>
+          <strong>Classes flow (mid-fi):</strong> explored ways to present live and recorded classes, categories (e.g., Natureza, Biologia), and content detail.
+        </figcaption>
+      </figure>
 
-    <!-- Home + Agenda wireframes -->
-    <figure class="card__single">
-      <img src="assets/cases/case2/mid-fidelity/Home screen+agenda.png" alt="Mid-fi wireframes for Home and Agenda explorations">
-      <figcaption>
-        <strong>Home + Agenda (mid-fi):</strong> explored integration of daily agenda, notifications, and calendar view. 
-        Postponed due to technical and strategic constraints, but key in shaping the final Home redesign.
-      </figcaption>
-    </figure>
-  </div>
-</section>
-
+      <figure class="card__single">
+        <img src="assets/cases/case2/mid-fidelity/Home screen+agenda.png" alt="Mid-fi wireframes for Home and Agenda explorations">
+        <figcaption>
+          <strong>Home + Agenda (mid-fi):</strong> explored integration of daily agenda, notifications, and calendar view. Postponed due to technical and strategic constraints, but key in shaping the final Home redesign.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
 
   <!-- SOLUTIONS -->
   <section>
     <h2>Design Solutions</h2>
+    <p>We focused on simplifying two critical screens:</p>
+
     <h3>Home</h3>
-    <ul>
-      <li>Live-first layout — “Currently Happening” at the top</li>
-      <li>Upcoming Broadcasts list for the day</li>
-      <li>Redirect confirmation modal before leaving to Google Meet/YouTube</li>
+    <ul class="card__list">
+      <li>Live-first layout — “Currently Happening” at the top.</li>
+      <li>Upcoming Broadcasts list for the day.</li>
+      <li>Redirect confirmation modal before leaving to Google Meet/YouTube.</li>
     </ul>
     <div class="card">
       <img src="assets/cases/case2/Home - Aula ao vivo.png" alt="Mockup Home redesign">
     </div>
 
     <h3>Profile</h3>
-    <ul>
-      <li>Display of student name, RA, and enrollment status</li>
-      <li>Clear Full-time vs Part-time distinction</li>
-      <li>Simple photo upload flow (camera, gallery, or mascot avatar)</li>
+    <ul class="card__list">
+      <li>Display of student name, RA, and enrollment status.</li>
+      <li>Clear Full-time vs Part-time distinction.</li>
+      <li>Simple photo upload flow (camera, gallery, or mascot avatar).</li>
     </ul>
     <div class="card">
       <img src="assets/cases/case2/Profile-screen.png" alt="Mockup Profile redesign">
-      <img src="assets/cases/case2/profile-changing-photo.png" alt="Mockup Profile redesign">
-      <img src="assets/cases/case2/profile-new-photo.png" alt="Mockup Profile redesign">
+      <img src="assets/cases/case2/profile-changing-photo.png" alt="Mockup Profile redesign changing photo">
+      <img src="assets/cases/case2/profile-new-photo.png" alt="Mockup Profile redesign with new photo">
     </div>
   </section>
 
   <!-- RESULTS -->
   <section>
     <h2>Results</h2>
-    <ul>
-      <li>Zero confusion reports at launch</li>
-      <li>Students praised clarity and usability (testimonials below)</li>
-      <li>Historic engagement decline reduced by ~45% after launch</li>
+    <ul class="card__list">
+      <li>Zero confusion reports at launch.</li>
+      <li>Students praised clarity and usability (testimonials below).</li>
+      <li>Historic engagement decline reduced by ~45% after launch.</li>
     </ul>
-    <div class="card">
+    <div class="card card__single">
       <img src="assets/cases/case2/testimonials.png" alt="Student testimonials praising the new app">
     </div>
   </section>
@@ -203,8 +196,18 @@
   <!-- LEARNINGS -->
   <section>
     <h2>Learnings</h2>
+    <ul class="card__list">
+      <li>Balancing speed and quality under tight deadlines is key.</li>
+      <li>Trade-offs are necessary to deliver high-value features on time.</li>
+      <li>Clarity and simplicity always beat complexity.</li>
+    </ul>
+  </section>
+
+  <!-- ROLE -->
+  <section>
+    <h2>My Role</h2>
     <p>
-      Leading decisions under pressure taught me to balance speed and quality. I learned how to prioritize essential features, make trade-offs, and keep alignment across teams. Clarity and simplicity beat complexity every time.
+      I led UX/UI decision-making for this redesign. I collaborated with 2 other designers and engineering, making trade-offs to deliver a smaller scope with higher quality in one week. I produced mid-fi explorations, facilitated team alignment, and designed the final UI for Home and Profile, ensuring mobile-first usability and live-class accessibility.
     </p>
   </section>
 
@@ -219,23 +222,17 @@
   <!-- CTA -->
   <section>
     <div class="description__buttons">
-      <a href="admissionredesign.html"rel="noopener noreferrer"
-          class="btn btn--primary">
-          <span>Back</span>
-          
+      <a href="admissionredesign.html" rel="noopener noreferrer" class="btn btn--primary">
+        <span>Back</span>
       </a>
 
       <a href="https://www.figma.com/proto/yCVNyeWdX6cvO3VZbRRoHL/Portolio-dev?page-id=59%3A6660&node-id=59-6796&viewport=212%2C82%2C0.22&t=1q5jx1Z2L1ho9Eb5-1&scaling=min-zoom&content-scaling=fixed"
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="btn btn--primary">
-          <span>Preview</span>   
+         target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+        <span>Preview</span>
       </a>
 
-      <a href="index.html"rel="noopener noreferrer"
-          class="btn btn--primary">
-          <span>Home</span>
-          
+      <a href="index.html" rel="noopener noreferrer" class="btn btn--primary">
+        <span>Home</span>
       </a>
     </div>
   </section>
